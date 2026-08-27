@@ -1,0 +1,122 @@
+:root{
+  --color1: #ccffbd;
+  --color2: #7eca9c;
+  --color3: #40394a;
+  --color4: #1c1427;
+  --color5: #000000;
+  --color6: #ffffff;
+  --color7: #625772;
+  --color8: #776a8a;
+}
+.allcategories{
+  background-color: var(--color8);
+  color: var(--color6);
+}
+.categories-title{
+  text-align: center;
+  font-size: 3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--color6);
+}
+.categories{
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--color8);
+}
+.categories .cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+.categories .cards .card{
+  height: 600px;
+  width: 350px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color7);
+  border-radius: 30px;
+}
+.categories .cards .card .inf{
+  height: 450px;
+  width: 350px;
+  position: absolute;
+  bottom: 0px;
+  background-color: var(--color6);
+  border-radius: 80px 80px 30px 30px;
+  color: var(--color5);
+  align-items: center;
+  text-align: center;
+}
+.inf .cat-img{
+  position: relative;
+}
+.inf img{
+  cursor: pointer;
+  position: absolute;
+  top: -120px;
+  left: 25px;
+  width: 300px;
+  transition: 0.2s linear;
+}
+.inf img:hover{
+  transform: translateY(-10%);
+  /*transform: scale(1.1);*/
+}
+h1{
+  margin-top: 120px;
+}
+.inf ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: gray
+}
+.cat-btn{
+  text-decoration: none;
+  position: absolute;
+  width: 150px;
+  bottom: 40px;
+  left: 100px;
+  background-color: var(--color4);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 30px;
+  color: var(--color6);
+}
+.cat-btn:hover{
+  background-color: var(--color3);
+  color: var(--color2);
+}
+.item h2{
+  margin-top: 0;
+  padding-top: 0;
+  color: var(--color2);
+}
+.item h1{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.toCart-btn{
+  text-decoration: none;
+  position: absolute;
+  width: 150px;
+  bottom: 10px;
+  left: 100px;
+  background-color: var(--color4);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 30px;
+  color: var(--color6);
+}
+.toCart-btn:hover{
+  background-color: var(--color3);
+  color: var(--color2);
+}
+ul .price{
+  color: var(--color2);
+  font-size: 1.5em;
+  font-weight: bold;
+}

@@ -1,0 +1,373 @@
+:root{
+  --color1: #ccffbd;
+  --color2: #7eca9c;
+  --color3: #40394a;
+  --color4: #1c1427;
+  --color5: #000000;
+  --color6: #ffffff;
+  --color7: #625772;
+  --color8: #776a8a;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product{
+  background-color: var(--color7);
+  width: 90%;
+  max-width: 90%;
+  border-radius: 2em 2em 0 0;
+  padding: 1em;
+  display: flex;
+  margin-top: 7em;
+}
+.product-top{
+  width: 50%;
+  max-width: 50%;
+}
+.product-property{
+  width: 50%;
+  max-width: 50%;
+}
+.images{
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1em;
+}
+.big-img{
+  margin: 3em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.big-img img{
+  height: 500px;
+  width: auto;
+}
+.small-img{
+  width: 100%;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+}
+.small-img img{
+  cursor: pointer;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.small{
+  width: 25%;
+  padding: 0.6em;
+}
+.small-img img~img{
+  margin-left: 2em;
+}
+.big-img iframe{
+  height: 500px;
+  width: 100%;
+  border: none;
+  border-radius: 1em;
+}
+.property{
+  margin: 3em;
+  position: relative;
+  height: 100%;
+}
+.property h1{
+  color: var(--color2);
+  font-size: 4em;
+  margin: 0;
+}
+.property h2{
+  color: var(--color1);
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 3em;
+}
+.send{
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+}
+.send a{
+  text-decoration: none;
+  font-size: 2em;
+  border: none;
+  padding: 0.5em;
+  border-radius: 1em;
+  background-color: var(--color3);
+  color: var(--color1);
+  cursor: pointer;
+}
+.send a:hover{
+  background-color: var(--color4);
+}
+.inf{
+  display: flex;
+}
+.gar{
+  height: 70%;
+}
+.gar, .szal{
+  width: 50%;
+  display: grid;
+  color: var(--color6);
+}
+.inf h2{
+  font-size: 1.3em;
+}
+.inf ul{
+  margin-top: 1em;
+  color: var(--color6);
+  list-style:circle;
+}
+.inf table{
+  margin-top: 1em;
+}
+.inf td{
+  width: 50%;
+}
+.rend{
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  font-size: 2em;
+  color: var(--color2);
+}
+.table{
+  background-color: var(--color7);
+  min-width: 90%;
+  border-radius: 0 0 2em 2em;
+  padding: 1em;
+  padding-top: 2em;
+  margin-bottom: 7em;
+}
+.table table{
+  width: 100%;
+  color: var(--color6);
+  margin-bottom: 2em;
+}
+.table table, .table th, .table td {
+  border-collapse: collapse;
+}
+.table table th{
+  padding: 0.5em;
+  background-color: var(--color3);
+}
+.first{
+  border-radius: 1em 1em 0 0 ;
+}
+.table table td{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 50%;
+  padding: 0.5em;
+  border-collapse: collapse;
+}
+.buttons{
+  background-color: var(--color7);
+  min-width: 90%;
+  padding: 1em;
+  padding-top: 2em;
+}
+.buttons button~button{
+  margin-left: 2em;
+}
+.buttons a, .send_comm{
+  text-decoration: none;
+  border: none;
+  padding: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: var(--color7);
+  color: var(--color6);
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+.buttons button:hover, .send_comm:hover{
+  color: var(--color2);
+  border-color: var(--color2);
+}
+.comm, .wcomm{
+  background-color: var(--color7);
+  min-width: 90%;
+  max-width: 90%;
+  padding: 1em;
+  padding-top: 2em;
+  margin-bottom: 7em;
+  border-radius: 0 0 2em 2em;
+}
+.comment{
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color6);
+}
+.comment img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.comment .comm_img {
+  padding: 1em;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.comment .comm_text{
+  padding: 1em;
+}
+.comment .comm_text h4, .write h3{
+  color: var(--color1);
+}
+.comm label{
+  color: var(--color6);
+}
+.comm textarea{
+  width: 100%;
+  min-height: 70px;
+}
+.text{
+  line-break: auto;
+}
+.comments:last-child{
+  margin-bottom: 2em;
+}
+.write{
+  padding: 1em;
+}
+.none{
+  display: none;
+}
+.btn button, .addcomm{
+  border: none;
+  background-color: var(--color7);
+  color: var(--color6);
+  font-size: 1em;
+  border-bottom: 1px solid var(--color6);
+}
+.btn button:hover, .addcomm:hover{
+  color: var(--color2);
+  border-bottom: 1px solid var(--color2);
+}
+@media screen and (max-width: 1600px) {
+  .big-img img{
+    height: 400px;
+    width: auto;
+  }
+  .property h2{
+    margin-bottom: 1em;
+  }
+  .rend, .send a{
+    font-size: 1.5em;
+  }
+  .big-img iframe{
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .property h1{
+    font-size: 3em;
+  }
+  .property h2{
+    font-size: 2em;
+  }
+  .big-img img{
+    height: 300px;
+    width: auto;
+  }
+  .big-img iframe{
+    height: 300px;
+  }
+  .inf{
+    font-size: 1em;
+  }
+  .gar, .szal{
+    margin-top: 1em;
+  }
+  .rend, .send{
+    bottom: 50px;
+  }
+  .rend, .send a, .send input{
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .gar{
+    margin-right: 1em;
+  }
+  .szal{
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 1em;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .product{
+    display: block;
+  }
+  .product-top, .product-property{
+    width: 100%;
+    max-width: 100%;
+  }
+  .big-img iframe{
+    height: 500px;
+  }
+  .big-img img{
+    height: 500px;
+    width: auto;
+  }
+  .rend, .send{
+    bottom: -60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .big-img iframe{
+    height: 400px;
+  }
+  .big-img img{
+    height: 400px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 610px) {
+  .big-img iframe{
+    height: 300px;
+  }
+  .big-img img{
+    height: 300px;
+    width: auto;
+  }
+  .small-img img~img{
+    margin-left: 1em;
+  }
+  .product, .table, .buttons{
+    width: 100%;
+    max-width: 100%;
+  }
+  .buttons{
+    padding-top: 5em;
+    padding-left: 2em;
+  }
+}
+@media screen and (max-width: 610px) {
+  html{
+    overflow-x: hidden ;
+  }
+  .send{
+    bottom: -100px;
+  }
+  .table{
+    padding-top: 3em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .big-img iframe{
+    height: 200px;
+  }
+  .big-img img{
+    height: 200px;
+  }
+}

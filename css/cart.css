@@ -1,0 +1,184 @@
+:root{
+  --color1: #ccffbd;
+  --color2: #7eca9c;
+  --color3: #40394a;
+  --color4: #1c1427;
+  --color5: #000000;
+  --color6: #ffffff;
+  --color7: #625772;
+  --color8: #776a8a;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  min-height: 90vh;
+  align-items: center;
+}
+.cart-div{
+  margin-top: 5em;
+  min-width: 1000px;
+}
+.cart-title{
+  text-align: center;
+  font-size: 3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--color6);
+}
+.cart-items{
+  margin: 0 4em;
+  background-color: var(--color7);
+  border-radius: 2em;
+  padding: 2em;
+}
+.cart-items .item{
+  margin-bottom: 2em;
+  min-width: 100%;
+  display: inline-flex;
+  border-bottom: 1px solid white;
+  padding-bottom: 1em;
+  position: relative;
+}
+.cart-items .item img{
+  width: 150px;
+}
+.cart-items .item .name{
+  margin-left: 3em;
+}
+.cart-items .item .name h3{
+  color: var(--color2);
+}
+.cart-items .item .name{
+  color: var(--color6);
+}
+.price{
+  position: absolute;
+  right: 0;
+  top: 1;
+  margin-top: 1em;
+}
+.price .money{
+  color: var(--color2);
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#minus, #plus{
+  cursor: pointer;
+}
+.delete{
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: red;
+  cursor: pointer;
+}
+.next{
+  width: 100%;
+  position: relative;
+}
+.next a{
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 1em;
+  border: none;
+  background-color: var(--color3);
+  color: var(--color6);
+  cursor: pointer;
+}
+.next a:hover{
+  color: var(--color2);
+}
+#all{
+  color: var(--color2);
+  font-size: 1.3em;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+}
+.noitem{
+  color: var(--color1);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 1030px) {
+  .cart-div{
+    margin-bottom: 5em;
+    min-width: 700px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cart-div{
+    min-width: 300px;
+  }
+  .cart-title{
+    font-size: 2em;
+  }
+  .price .money, #all{
+    font-size: 1em;
+  }
+  .next a{
+    font-size: 0.7em;
+  }
+  .cart-items .item img{
+    width: auto;
+    height: 100px;
+  }
+  .cart-items .item .name h3, .name span, .price .db span{
+    font-size: 0.8em;
+  }
+  .item{
+    min-height: 100px;
+  }
+  .cart-items .item .name{
+    margin-top: 0.8em;
+    margin-left: 1em;
+  }
+}
+@media screen and (max-width: 520px) {
+  .cart-div{
+    min-width: 90%;
+  }
+  .next{
+    position: relative;
+  }
+  .cart-items .item img{
+    display: none;
+  }
+  .item{
+    min-height: 90px;
+  }
+  #all{
+    font-size: 1.3em;
+    position: absolute;
+    white-space: nowrap;
+    top: -10px;
+    width: 100%;
+    text-align: center;
+  }
+  .next a{
+    position: absolute;
+    bottom: -60px;
+    width: 90%;
+    text-align: center;
+  }
+  .cart-items{
+    padding: 0.8em;
+  }
+  .cart-items{
+    min-height: 400px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 410px) {
+  .cart-div{
+    min-width: 100%;
+  }
+  .next a{
+    bottom: -80px;
+  }
+  .cart-items{
+    margin: 0.5em;
+  }
+}

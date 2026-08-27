@@ -1,0 +1,44 @@
+:root{
+  --color1: #ccffbd;
+  --color2: #7eca9c;
+  --color3: #40394a;
+  --color4: #1c1427;
+  --color5: #000000;
+  --color6: #ffffff;
+  --color7: #625772;
+  --color8: #776a8a;
+}
+.kapcsolat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kap{
+  border-radius: 2em;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  color: var(--color6);
+  width: 90%;
+  background-color: var(--color7);
+}
+.all{
+  margin: 0 2em 2em 2em;
+}
+.imp{
+  width: 100%;
+  text-align: center;
+}
+.imp b{
+  font-size: 1.1em;
+}
+@media screen and (max-width: 880px) {
+  .categories-title{
+    font-size: 2em;
+  }
+  .information h4, .information p{
+    font-size: 0.8em;
+  }
+  .imp b{
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,201 @@
+:root{
+  --color1: #ccffbd;
+  --color2: #7eca9c;
+  --color3: #40394a;
+  --color4: #1c1427;
+  --color5: #000000;
+  --color6: #ffffff;
+  --color7: #625772;
+  --color8: #776a8a;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../font/Poppins-Light.ttf);
+}
+html::-webkit-scrollbar{
+  width: 0px;
+}
+body{
+  font-family: Poppins, sans-serif;
+  background-color: var(--color3);
+  text-decoration: none;
+  margin: 0;
+  overflow-x: hidden;
+}
+header a img, .hamburger{
+  cursor: pointer;
+  height: 40px;
+}
+.nocart{
+  height: 40px;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  z-index: 1000;
+  justify-content: space-between;
+  box-shadow: 0 0.7rem 0.9rem rgba(0, 0, 0, 0.2);
+}
+.logo{
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--color6);
+  font-weight: bolder;
+  padding-right: 1.2rem;
+  position: relative;
+}
+.logo::before, .logo::after{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  content: '';
+}
+.logo::before{
+  left: -20px;
+  top: 0;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+}
+.logo::after{
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+}
+nav a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--color6);
+  padding: 0 1rem;
+}
+nav a:hover{
+  color: var(--color2);
+}
+.active{
+  border-bottom: 0.2rem solid var(--color6) ;
+}
+.active:hover{
+  border-color: var(--color2) ;
+}
+.icons a{
+  margin-left: 1rem;
+}
+.cart:hover{
+  content:url('../img/icons/carthover.png');
+  height: 40px;
+}
+.prof:hover{
+  content:url('../img/icons/profilhover.png');
+  height: 40px;
+}
+.hamburger:hover{
+  content:url('../img/icons/hamburgerhover.png');
+  height: 40px;
+}
+.icons .user_img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.hamburger, .ham{
+  display: none;
+}
+#toggler{
+  display: none;
+}
+.num{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--color6);
+  background-color: red;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  width: 15px;
+}
+footer{
+  color: var(--color6);
+  background-color: var(--color4);
+}
+.foot{
+  display: flex;
+  padding: 1rem;
+}
+.foot ul{
+  list-style: none;
+  float: right;
+}
+.foot-logo, .foot-ul{
+  width: 50%;
+}
+.foot-ul{
+  padding-right: 1rem;
+}
+.foot-l{
+  display: flex;
+  min-height: 11vh;
+  align-items: center;
+}
+.foot ul a {
+  text-decoration: none;
+  color: var(--color6);
+}
+.foot ul a:hover{
+  color: var(--color2);
+}
+#toCart{
+  pointer-events: none;
+  filter: opacity(75%);
+}
+.error_msg{
+  width: 100%;
+  text-align: center;
+  color: var(--color1);
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.nopro{
+  font-size: 2em;
+  color: var(--color6)
+}
+@media screen and (max-width: 800px) {
+  /*nav*/
+  .hamburger, .ham{
+    display: block;
+  }
+  nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color4);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  #toggler:checked ~ nav{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  nav a{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: block;
+  }
+  .active{
+    border-bottom: 0.1rem solid var(--color6) ;
+  }
+  .nopro{
+    font-size: 1em;
+    color: var(--color6)
+  }
+}
